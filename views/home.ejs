@@ -1,0 +1,37 @@
+<!--Header-->
+<%- include("partials/header"); -%>
+
+<div class="row">
+  <!-- Quote -->
+    <div class="col-sm-9">
+      <h2><%=quote%></h2>
+    </div>
+
+    <!-- Weather Widget -->
+    <div class="weatherWidget col-sm-3">
+      <div class="panel">
+        <div class="date">
+          <%=currentDate%>
+        </div>
+        <div class="city">
+          New Delhi
+        </div>
+        <div class="temp">
+          <img src="<%=imgUrl%>" alt="" width="60">
+          <span><%=temp%>°</span>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Unsplash Picture -->
+<div class="row">
+  <div class="col-sm-9">
+  </div>
+  <div class="unsplash col-sm-3">
+    <img class="unsplash" src="<%=unsplashImageUrl%>" alt="">
+  </div>
+</div>
+
+<!--Footer-->
+<%- include("partials/footer"); -%>
